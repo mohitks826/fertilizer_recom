@@ -8,6 +8,7 @@ model = pickle.load(open('classifier.pkl','rb'))
 ferti = pickle.load(open('fertilizer.pkl','rb'))
 
 @app.route('/')
+
 def home():
     return render_template('plantindex.html')
 
